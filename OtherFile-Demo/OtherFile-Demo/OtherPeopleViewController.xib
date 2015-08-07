@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OtherPeopleViewController">
+            <connections>
+                <outlet property="btnView" destination="xFe-aj-aAn" id="m6e-HN-GWI"/>
+                <outlet property="iconCell" destination="wlz-fI-9a8" id="O5G-n4-jVe"/>
+                <outlet property="table1" destination="Kb9-Lv-bbL" id="kPD-TD-Rdm"/>
+                <outlet property="table1B" destination="swN-rD-HvK" id="k84-uL-Zc9"/>
+                <outlet property="table2" destination="n5k-4l-Wrv" id="hph-Cn-7xk"/>
+                <outlet property="table2B" destination="hUI-3H-lqR" id="6TV-fE-yPC"/>
+                <outlet property="view" destination="jux-11-Tow" id="8Yy-tE-CRs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jux-11-Tow">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="dataSource" destination="-1" id="u6h-ea-P4D"/>
+                <outlet property="delegate" destination="-1" id="byV-1x-FNN"/>
+            </connections>
+            <point key="canvasLocation" x="583" y="227"/>
+        </tableView>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="145" id="wlz-fI-9a8">
+            <rect key="frame" x="0.0" y="1" width="320" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wlz-fI-9a8" id="xRu-QL-wkT">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconImgPlaceholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="wQv-nD-pYX">
+                        <rect key="frame" x="121" y="17" width="78" height="95"/>
+                    </imageView>
+                </subviews>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="1188" y="257.5"/>
+        </tableViewCell>
+        <view contentMode="scaleToFill" id="xFe-aj-aAn">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUI-3H-lqR">
+                    <rect key="frame" x="201" y="13" width="86" height="34"/>
+                    <state key="normal" title="回答">
+                        <color key="titleColor" red="0.24447273019999999" green="0.53458323720000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swN-rD-HvK">
+                    <rect key="frame" x="26" y="13" width="81" height="30"/>
+                    <state key="normal" title="提问">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="1235" y="7.5"/>
+        </view>
+        <tableView clipsSubviews="YES" tag="2" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="n5k-4l-Wrv">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="dataSource" destination="-1" id="YzG-BF-Twi"/>
+                <outlet property="delegate" destination="-1" id="C21-rL-igM"/>
+            </connections>
+            <point key="canvasLocation" x="1491" y="264"/>
+        </tableView>
+        <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Kb9-Lv-bbL">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="dataSource" destination="-1" id="Zkb-af-ib5"/>
+                <outlet property="delegate" destination="-1" id="tX0-pB-jw3"/>
+            </connections>
+            <point key="canvasLocation" x="1037" y="409"/>
+        </tableView>
+    </objects>
+    <resources>
+        <image name="iconImgPlaceholder.png" width="780" height="780"/>
+    </resources>
+</document>
