@@ -33,10 +33,17 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wlz-fI-9a8" id="xRu-QL-wkT">
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconImgPlaceholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="wQv-nD-pYX">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconImgPlaceholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="wQv-nD-pYX">
                         <rect key="frame" x="121" y="17" width="78" height="95"/>
                     </imageView>
                 </subviews>
+                <color key="backgroundColor" red="1" green="0.69717933229999995" blue="0.59520693739999997" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="wQv-nD-pYX" firstAttribute="top" secondItem="xRu-QL-wkT" secondAttribute="top" constant="17" id="75I-Ec-3wb"/>
+                    <constraint firstItem="wQv-nD-pYX" firstAttribute="leading" secondItem="xRu-QL-wkT" secondAttribute="leading" constant="121" id="Tre-dk-Vdo"/>
+                    <constraint firstAttribute="bottom" secondItem="wQv-nD-pYX" secondAttribute="bottom" constant="32" id="dkZ-Xe-F0Q"/>
+                    <constraint firstAttribute="trailing" secondItem="wQv-nD-pYX" secondAttribute="trailing" constant="121" id="qiC-ci-GP7"/>
+                </constraints>
             </tableViewCellContentView>
             <point key="canvasLocation" x="1188" y="257.5"/>
         </tableViewCell>
@@ -58,7 +65,7 @@
                     </state>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="backgroundColor" red="0.3810807269" green="0.87361900250000002" blue="0.78898386009999999" alpha="1" colorSpace="calibratedRGB"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="1235" y="7.5"/>
         </view>
